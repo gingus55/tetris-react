@@ -6,7 +6,6 @@ import Stage from "./Stage";
 import Display from "./Display";
 import StartButton from "./StartButton";
 
-console.log("tetris");
 const Tetris = () => {
   console.log("tetris");
   return (
