@@ -1,7 +1,7 @@
 import React from "react";
 
 const Cell = ({ type }) => {
-  <div>Cell</div>;
+  return <div>Cell</div>;
 };
 
 export default Cell;
