@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import bgImage from "../../images/PixelChris.jpg";
+
 export const StyledStage = styled.div`
   display: grid;
   grid-template-rows: repeat(
@@ -12,4 +14,7 @@ export const StyledStage = styled.div`
   width: 100%;
   max-width: 25vw;
   background: #111;
+  /* background: url(${bgImage}) no-repeat;
+  opacity: 100%;
+  background-size: 100%; */
 `;

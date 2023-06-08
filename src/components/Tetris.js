@@ -14,6 +14,7 @@ import { useGameStatus } from "../hooks/useGameStatus";
 import Stage from "./Stage";
 import Display from "./Display";
 import StartButton from "./StartButton";
+import { Image } from "react-bootstrap";
 
 const Tetris = () => {
   const [dropTime, setDropTime] = useState(null);
@@ -106,21 +107,23 @@ const Tetris = () => {
       onKeyDown={(e) => move(e)}
       onKeyUp={keyUp}
     >
-      <StyledTetris>
-        <Stage stage={stage} />
-        <aside>
-          {gameOver ? (
-            <Display gameOver={gameOver} text="Game Over" />
-          ) : (
-            <div>
-              <Display text={`Score : ${score}`} />
-              <Display text={`Rows : ${rows}`} />
-              <Display text={`Level : ${level}`} />
-            </div>
-          )}
-          <StartButton callback={startGame} />
-        </aside>
-      </StyledTetris>
+      <div>
+        <StyledTetris>
+          <Stage stage={stage} />
+          <aside>
+            {gameOver ? (
+              <Display gameOver={gameOver} text="Game Over" />
+            ) : (
+              <div>
+                <Display text={`Score : ${score}`} />
+                <Display text={`Rows : ${rows}`} />
+                <Display text={`Level : ${level}`} />
+              </div>
+            )}
+            <StartButton callback={startGame} />
+          </aside>
+        </StyledTetris>
+      </div>
     </StyledTetrisWrapper>
   );
 };
