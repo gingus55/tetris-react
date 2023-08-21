@@ -2,6 +2,7 @@
   "name": "tetris-react",
   "version": "0.1.0",
   "private": true,
+  "hompage": "https://gingus55.github.io/tetris-react",
   "dependencies": {
     "@capacitor/android": "^5.0.4",
     "@capacitor/cli": "^5.0.4",
